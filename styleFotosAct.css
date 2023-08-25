@@ -1,0 +1,190 @@
+/* Estilos para la página web */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stylish&display=swap');
+
+  body {
+    background-color: #f0f0f0;
+    min-height: 100vh;
+
+  }
+  
+header {
+  color: #b80f09;
+  padding: 20px;
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: linear-gradient(315deg, #7b0202 0%, #082142 74%);
+  background-size: cover;
+}
+
+section {
+  margin: auto;
+  border: 1px solid rgba(188, 188, 188, 0.544);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.989);
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  max-width: 1000px;
+}
+
+.image-container img {
+  width: 400px;
+  height: 600px;
+  border-radius: 10px;
+  margin: 10px;
+  transition: all 1s;
+  border: 1px solid rgba(222, 222, 222, 0.544);
+  box-shadow: 0 4px 8px 0 rgba(8, 7, 7, 0.343);
+  opacity: 1;
+  transition: all 1s;
+
+}
+img{
+  opacity: 1;
+  transition: all 1s;
+}
+
+.image-container {
+  position: relative;
+  transition: all 1.5s;
+}
+
+.Ensayos {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-container:hover img{
+  opacity: .7;
+  transform: scale(.9,.9);
+}
+
+.image-container:hover i::after{
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  content: attr(title);
+  position: absolute;
+  top: 80%;
+  right: 50%;
+  animation-name: text;
+  animation-duration: 1.5s;
+
+}
+
+@keyframes text {
+  from{right:60%}
+  to{right:50%}
+}
+h1{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#f0f0f0;
+}
+
+.wrapper .button{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin: 0 5px;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover{
+  width: 200px;
+}
+.wrapper .button .icon{
+  display: inline-block;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50px;
+  box-sizing: border-box;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1):hover .icon{
+  background: #4267B2;
+}
+.wrapper .button:nth-child(2):hover .icon{
+  background: #1DA1F2;
+}
+.wrapper .button:nth-child(3):hover .icon{
+  background: #E1306C;
+}
+.wrapper .button:nth-child(4):hover .icon{
+  background: #333;
+}
+.wrapper .button:nth-child(5):hover .icon{
+  background: #ff0000;
+}
+.wrapper .button .icon i{
+  font-size: 25px;
+  line-height: 60px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:hover .icon i{
+  color: #fff;
+}
+.wrapper .button span{
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 60px;
+  margin-left: 10px;
+  transition: all 0.3s ease-out;
+}
+.wrapper .button:nth-child(1) span{
+  color: #4267B2;
+}
+.wrapper .button:nth-child(2) span{
+  color: #1DA1F2;
+}
+.wrapper .button:nth-child(3) span{
+  color: #E1306C;
+}
+.wrapper .button:nth-child(4) span{
+  color: #333;
+}
+.wrapper .button:nth-child(5) span{
+  color: #ff0000;
+}
+
+
+button {
+  background-color: #3d91be; /* Color de fondo predeterminado */
+  color: #ffffff; /* Color de texto predeterminado */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:active {
+  background-color: #f44336; /* Nuevo color de fondo cuando se presiona */
+}
+
+.contadores {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration:double;
+  text-shadow: #000000;
+  font-size: 18px;
+  color: #ffffff; /* Color del texto */
+  
+}
